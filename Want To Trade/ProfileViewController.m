@@ -97,6 +97,7 @@
 -(void)someMethod{
     NSLog(@"Logout Code To Come Here");
 #warning Tim, come back to this!!
+    NSLog(@"This will test the changes made");
 }
 
 @end
