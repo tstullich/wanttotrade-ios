@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-@interface MyBooksViewController : UITableViewController<NSURLConnectionDelegate>{
+@interface MyBooksViewController : UITableViewController<NSURLConnectionDelegate, UITableViewDelegate>{
     NSInteger selectedIndex;
     AppDelegate *appDel;
     NSMutableData *receivedData;
@@ -22,6 +22,5 @@
 @property (nonatomic, retain) NSMutableData *receivedData;
 @property (nonatomic, retain) NSString *responseString;
 @property (atomic, retain) NSMutableArray *books;
-@property (nonatomic, retain) IBOutlet UITableView *tableView;
 
 @end

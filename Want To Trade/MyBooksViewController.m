@@ -12,6 +12,7 @@
 #import "HomeViewController.h"
 #import "SBJson.h"
 #import "MBProgressHUD.h"
+#import "MyBooksDetailViewController.h"
 
 @interface MyBooksViewController ()
 
@@ -24,7 +25,6 @@
 @synthesize receivedData;
 @synthesize responseString;
 @synthesize books = _books;
-@synthesize tableView = _tableView;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -157,6 +157,7 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
     _selectedIndex = indexPath.row;
+    [self performSegueWithIdentifier:@"MyBooksDetailSegue" sender:self];
     
 }
 
@@ -164,6 +165,11 @@
     if ([[segue identifier] isEqualToString:@"MyBooksBackSegue"]) {
         HomeViewController *hvc = [segue destinationViewController];
         hvc.navigationItem.hidesBackButton = YES;
+    }
+    else if ([[segue identifier] isEqualToString:@"MyBooksDetailSegue"]) {
+        MyBooksDetailViewController *bdv = [segue destinationViewController];
+        
+        bdv.receivedBook = [_books objectAtIndex:_selectedIndex];
     }
 }
 
@@ -223,16 +229,16 @@
     
     _books = [results objectForKey:@"data"];
     
-    for (NSDictionary *book in _books) {
-        NSLog(@"Title: %@\n", [book valueForKey:@"ID"]);
+    for (Book *book in _books) {
+        NSLog(@"Title: %@\n", [book valueForKey:@"Title"]);
     }
-    [self performSelectorOnMainThread:@selector(updateUI) withObject:nil waitUntilDone:NO];    
+    [self performSelectorOnMainThread:@selector(updateUI) withObject:nil waitUntilDone:NO];
 }
 
 //Uses the loaded json and adds the books to the view.
 //Also dismisses the progress view
 -(void)updateUI{
-    [_tableView reloadData];
+    [self.tableView reloadData];
     [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
 

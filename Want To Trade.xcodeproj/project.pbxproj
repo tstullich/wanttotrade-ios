@@ -66,6 +66,7 @@
 		7151990C15CCFF0500566BCC /* individual login button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7151990B15CCFF0500566BCC /* individual login button.png */; };
 		7151990F15CCFF2000566BCC /* Serach for books.png in Resources */ = {isa = PBXBuildFile; fileRef = 7151990E15CCFF2000566BCC /* Serach for books.png */; };
 		7151991115CE6B0F00566BCC /* All done reedit.png in Resources */ = {isa = PBXBuildFile; fileRef = 7151991015CE6B0F00566BCC /* All done reedit.png */; };
+		7151991815CEFC5D00566BCC /* MyBooksDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151991715CEFC5D00566BCC /* MyBooksDetailViewController.m */; };
 		7185B0B115B0AC180021D074 /* RecentAddsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185B0B015B0AC180021D074 /* RecentAddsCell.m */; };
 		71889CF315B0C44C00E423BF /* RecentAddsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71889CF215B0C44C00E423BF /* RecentAddsViewController.m */; };
 		71889CF615B0C49A00E423BF /* WishlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71889CF515B0C49A00E423BF /* WishlistViewController.m */; };
@@ -198,6 +199,8 @@
 		7151990D15CCFF0F00566BCC /* All done reedit.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "All done reedit.psd"; sourceTree = "<group>"; };
 		7151990E15CCFF2000566BCC /* Serach for books.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Serach for books.png"; sourceTree = "<group>"; };
 		7151991015CE6B0F00566BCC /* All done reedit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "All done reedit.png"; sourceTree = "<group>"; };
+		7151991615CEFC5D00566BCC /* MyBooksDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBooksDetailViewController.h; sourceTree = "<group>"; };
+		7151991715CEFC5D00566BCC /* MyBooksDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBooksDetailViewController.m; sourceTree = "<group>"; };
 		7185B0AF15B0AC180021D074 /* RecentAddsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentAddsCell.h; sourceTree = "<group>"; };
 		7185B0B015B0AC180021D074 /* RecentAddsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentAddsCell.m; sourceTree = "<group>"; };
 		71889CF115B0C44C00E423BF /* RecentAddsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentAddsViewController.h; sourceTree = "<group>"; };
@@ -417,6 +420,8 @@
 			children = (
 				710712A915B28C4800530C30 /* MyBooksViewController.h */,
 				710712AA15B28C4800530C30 /* MyBooksViewController.m */,
+				7151991615CEFC5D00566BCC /* MyBooksDetailViewController.h */,
+				7151991715CEFC5D00566BCC /* MyBooksDetailViewController.m */,
 			);
 			name = "My Books VCs";
 			sourceTree = "<group>";
@@ -693,6 +698,7 @@
 				71E92B8C15BF5D0600E1FB5B /* EditDetailViewController.m in Sources */,
 				71369A2415C11D72001D225C /* SearchViewController.m in Sources */,
 				71369A2715C23543001D225C /* WishListSearchViewController.m in Sources */,
+				7151991815CEFC5D00566BCC /* MyBooksDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
