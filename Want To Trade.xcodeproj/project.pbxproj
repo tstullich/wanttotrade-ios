@@ -27,8 +27,6 @@
 		71009C4715ACB08A00A961C3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71009C4615ACB08A00A961C3 /* HomeViewController.m */; };
 		71009C4A15ACB0AC00A961C3 /* LoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71009C4915ACB0AC00A961C3 /* LoadViewController.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		71009C5015ACB0EF00A961C3 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71009C4F15ACB0EF00A961C3 /* ProfileViewController.m */; };
-		7100E5BB15C610A4005E2EB9 /* Blank Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 7100E5BA15C610A4005E2EB9 /* Blank Banner.png */; };
-		7100E5BE15C61F15005E2EB9 /* individual login button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7100E5BD15C61F15005E2EB9 /* individual login button.png */; };
 		7107129315B2525B00530C30 /* ChooseMajorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7107129215B2525B00530C30 /* ChooseMajorViewController.m */; };
 		7107129A15B2614400530C30 /* ChooseMajorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7107129915B2614400530C30 /* ChooseMajorCell.m */; };
 		7107129D15B2627E00530C30 /* Major.m in Sources */ = {isa = PBXBuildFile; fileRef = 7107129C15B2627E00530C30 /* Major.m */; };
@@ -57,20 +55,21 @@
 		711F0C4815C8D222005EEEF4 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 711F0C4015C8D222005EEEF4 /* libfacebook_ios_sdk.a */; };
 		71369A2415C11D72001D225C /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71369A2315C11D72001D225C /* SearchViewController.m */; };
 		71369A2715C23543001D225C /* WishListSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71369A2615C23543001D225C /* WishListSearchViewController.m */; };
-		713E5DF515C67C3600FCE910 /* Major button #3 noteworthy bold.png in Resources */ = {isa = PBXBuildFile; fileRef = 713E5DF115C67C3600FCE910 /* Major button #3 noteworthy bold.png */; };
-		713E5DF615C67C3600FCE910 /* My books button #2 noteworthy bold.png in Resources */ = {isa = PBXBuildFile; fileRef = 713E5DF215C67C3600FCE910 /* My books button #2 noteworthy bold.png */; };
-		713E5DF715C67C3600FCE910 /* Recent button #1 noteworthy bold.png in Resources */ = {isa = PBXBuildFile; fileRef = 713E5DF315C67C3600FCE910 /* Recent button #1 noteworthy bold.png */; };
-		713E5DF815C67C3600FCE910 /* Upload button #4 noteworthy bold.png in Resources */ = {isa = PBXBuildFile; fileRef = 713E5DF415C67C3600FCE910 /* Upload button #4 noteworthy bold.png */; };
 		7149ADD615C888E600323B27 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149ADD515C888BB00323B27 /* MBProgressHUD.m */; };
-		7158B32B15C07D960002B912 /* Serach for books.png in Resources */ = {isa = PBXBuildFile; fileRef = 7158B32A15C07D960002B912 /* Serach for books.png */; };
-		7158B32D15C081100002B912 /* Sign me up reedit copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7158B32C15C081100002B912 /* Sign me up reedit copy.png */; };
-		7158B33015C081FE0002B912 /* All done reedit.png in Resources */ = {isa = PBXBuildFile; fileRef = 7158B32F15C081FE0002B912 /* All done reedit.png */; };
-		7167E58615C5CB14008A68C7 /* Top banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 7167E58515C5CB14008A68C7 /* Top banner.png */; };
+		715198FF15CCFEBB00566BCC /* Blank Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 715198FD15CCFEBB00566BCC /* Blank Banner.png */; };
+		7151990015CCFEBB00566BCC /* Top banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 715198FE15CCFEBB00566BCC /* Top banner.png */; };
+		7151990215CCFECF00566BCC /* Sign me up reedit copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7151990115CCFECF00566BCC /* Sign me up reedit copy.png */; };
+		7151990715CCFEF000566BCC /* Major button #3 noteworthy bold.png in Resources */ = {isa = PBXBuildFile; fileRef = 7151990315CCFEF000566BCC /* Major button #3 noteworthy bold.png */; };
+		7151990815CCFEF000566BCC /* My books button #2 noteworthy bold copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7151990415CCFEF000566BCC /* My books button #2 noteworthy bold copy.png */; };
+		7151990915CCFEF000566BCC /* Recent button #1 noteworthy bold.png in Resources */ = {isa = PBXBuildFile; fileRef = 7151990515CCFEF000566BCC /* Recent button #1 noteworthy bold.png */; };
+		7151990A15CCFEF000566BCC /* Upload button #4 noteworthy bold.png in Resources */ = {isa = PBXBuildFile; fileRef = 7151990615CCFEF000566BCC /* Upload button #4 noteworthy bold.png */; };
+		7151990C15CCFF0500566BCC /* individual login button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7151990B15CCFF0500566BCC /* individual login button.png */; };
+		7151990F15CCFF2000566BCC /* Serach for books.png in Resources */ = {isa = PBXBuildFile; fileRef = 7151990E15CCFF2000566BCC /* Serach for books.png */; };
+		7151991115CE6B0F00566BCC /* All done reedit.png in Resources */ = {isa = PBXBuildFile; fileRef = 7151991015CE6B0F00566BCC /* All done reedit.png */; };
 		7185B0B115B0AC180021D074 /* RecentAddsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185B0B015B0AC180021D074 /* RecentAddsCell.m */; };
 		71889CF315B0C44C00E423BF /* RecentAddsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71889CF215B0C44C00E423BF /* RecentAddsViewController.m */; };
 		71889CF615B0C49A00E423BF /* WishlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71889CF515B0C49A00E423BF /* WishlistViewController.m */; };
 		71889CFC15B1009B00E423BF /* UploadBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71889CFB15B1009B00E423BF /* UploadBookViewController.m */; };
-		71BFCF6915B87F4D007D584A /* wanttotrade2.png in Resources */ = {isa = PBXBuildFile; fileRef = 71BFCF6815B87F4D007D584A /* wanttotrade2.png */; };
 		71C4FA2915AF5B8E0037B0DB /* login button 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C4FA2815AF5B8E0037B0DB /* login button 2.png */; };
 		71C4FA2C15AF5F480037B0DB /* book search button 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C4FA2B15AF5F480037B0DB /* book search button 1.png */; };
 		71C4FA3015AF65100037B0DB /* default pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C4FA2F15AF650F0037B0DB /* default pic.png */; };
@@ -118,8 +117,6 @@
 		71009C4915ACB0AC00A961C3 /* LoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadViewController.m; sourceTree = "<group>"; };
 		71009C4E15ACB0EF00A961C3 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		71009C4F15ACB0EF00A961C3 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		7100E5BA15C610A4005E2EB9 /* Blank Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Blank Banner.png"; path = "../../Dropbox/Project-Want to trade/New homescreen layout/Blank Banner.png"; sourceTree = "<group>"; };
-		7100E5BD15C61F15005E2EB9 /* individual login button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "individual login button.png"; path = "../../Dropbox/Project-Want to trade/New homescreen layout/individual login button.png"; sourceTree = "<group>"; };
 		7107129115B2525B00530C30 /* ChooseMajorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseMajorViewController.h; sourceTree = "<group>"; };
 		7107129215B2525B00530C30 /* ChooseMajorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseMajorViewController.m; sourceTree = "<group>"; };
 		7107129815B2614400530C30 /* ChooseMajorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseMajorCell.h; sourceTree = "<group>"; };
@@ -188,16 +185,19 @@
 		71369A2315C11D72001D225C /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		71369A2515C23543001D225C /* WishListSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListSearchViewController.h; sourceTree = "<group>"; };
 		71369A2615C23543001D225C /* WishListSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishListSearchViewController.m; sourceTree = "<group>"; };
-		713E5DF115C67C3600FCE910 /* Major button #3 noteworthy bold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Major button #3 noteworthy bold.png"; path = "../../Dropbox/Project-Want to trade/New homescreen layout/Major button #3 noteworthy bold.png"; sourceTree = "<group>"; };
-		713E5DF215C67C3600FCE910 /* My books button #2 noteworthy bold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "My books button #2 noteworthy bold.png"; path = "../../Dropbox/Project-Want to trade/New homescreen layout/My books button #2 noteworthy bold.png"; sourceTree = "<group>"; };
-		713E5DF315C67C3600FCE910 /* Recent button #1 noteworthy bold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Recent button #1 noteworthy bold.png"; path = "../../Dropbox/Project-Want to trade/New homescreen layout/Recent button #1 noteworthy bold.png"; sourceTree = "<group>"; };
-		713E5DF415C67C3600FCE910 /* Upload button #4 noteworthy bold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Upload button #4 noteworthy bold.png"; path = "../../Dropbox/Project-Want to trade/New homescreen layout/Upload button #4 noteworthy bold.png"; sourceTree = "<group>"; };
 		7149ADD415C888BB00323B27 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		7149ADD515C888BB00323B27 /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		7158B32A15C07D960002B912 /* Serach for books.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Serach for books.png"; path = "../../Dropbox/Project-Want to trade/New homescreen layout/Serach for books.png"; sourceTree = "<group>"; };
-		7158B32C15C081100002B912 /* Sign me up reedit copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sign me up reedit copy.png"; path = "../../Dropbox/Project-Want to trade/New homescreen layout/Sign me up reedit copy.png"; sourceTree = "<group>"; };
-		7158B32F15C081FE0002B912 /* All done reedit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "All done reedit.png"; path = "../../Dropbox/Project-Want to trade/New homescreen layout/All done reedit.png"; sourceTree = "<group>"; };
-		7167E58515C5CB14008A68C7 /* Top banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Top banner.png"; path = "../../Dropbox/Project-Want to trade/New homescreen layout/Top banner.png"; sourceTree = "<group>"; };
+		715198FD15CCFEBB00566BCC /* Blank Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blank Banner.png"; sourceTree = "<group>"; };
+		715198FE15CCFEBB00566BCC /* Top banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Top banner.png"; sourceTree = "<group>"; };
+		7151990115CCFECF00566BCC /* Sign me up reedit copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign me up reedit copy.png"; sourceTree = "<group>"; };
+		7151990315CCFEF000566BCC /* Major button #3 noteworthy bold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Major button #3 noteworthy bold.png"; sourceTree = "<group>"; };
+		7151990415CCFEF000566BCC /* My books button #2 noteworthy bold copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My books button #2 noteworthy bold copy.png"; sourceTree = "<group>"; };
+		7151990515CCFEF000566BCC /* Recent button #1 noteworthy bold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Recent button #1 noteworthy bold.png"; sourceTree = "<group>"; };
+		7151990615CCFEF000566BCC /* Upload button #4 noteworthy bold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Upload button #4 noteworthy bold.png"; sourceTree = "<group>"; };
+		7151990B15CCFF0500566BCC /* individual login button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "individual login button.png"; sourceTree = "<group>"; };
+		7151990D15CCFF0F00566BCC /* All done reedit.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "All done reedit.psd"; sourceTree = "<group>"; };
+		7151990E15CCFF2000566BCC /* Serach for books.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Serach for books.png"; sourceTree = "<group>"; };
+		7151991015CE6B0F00566BCC /* All done reedit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "All done reedit.png"; sourceTree = "<group>"; };
 		7185B0AF15B0AC180021D074 /* RecentAddsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentAddsCell.h; sourceTree = "<group>"; };
 		7185B0B015B0AC180021D074 /* RecentAddsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentAddsCell.m; sourceTree = "<group>"; };
 		71889CF115B0C44C00E423BF /* RecentAddsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentAddsViewController.h; sourceTree = "<group>"; };
@@ -206,7 +206,6 @@
 		71889CF515B0C49A00E423BF /* WishlistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishlistViewController.m; sourceTree = "<group>"; };
 		71889CFA15B1009B00E423BF /* UploadBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadBookViewController.h; sourceTree = "<group>"; };
 		71889CFB15B1009B00E423BF /* UploadBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadBookViewController.m; sourceTree = "<group>"; };
-		71BFCF6815B87F4D007D584A /* wanttotrade2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wanttotrade2.png; path = "../../Dropbox/project-want to trade/Icon Files/wanttotrade2.png"; sourceTree = "<group>"; };
 		71C4FA2815AF5B8E0037B0DB /* login button 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login button 2.png"; sourceTree = "<group>"; };
 		71C4FA2B15AF5F480037B0DB /* book search button 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "book search button 1.png"; sourceTree = "<group>"; };
 		71C4FA2F15AF650F0037B0DB /* default pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default pic.png"; sourceTree = "<group>"; };
@@ -310,27 +309,27 @@
 		71009BF215ACADD400A961C3 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				713E5DF115C67C3600FCE910 /* Major button #3 noteworthy bold.png */,
-				713E5DF215C67C3600FCE910 /* My books button #2 noteworthy bold.png */,
-				713E5DF315C67C3600FCE910 /* Recent button #1 noteworthy bold.png */,
-				713E5DF415C67C3600FCE910 /* Upload button #4 noteworthy bold.png */,
-				7100E5BD15C61F15005E2EB9 /* individual login button.png */,
-				7158B32F15C081FE0002B912 /* All done reedit.png */,
-				7158B32A15C07D960002B912 /* Serach for books.png */,
-				71BFCF6815B87F4D007D584A /* wanttotrade2.png */,
+				7151990315CCFEF000566BCC /* Major button #3 noteworthy bold.png */,
+				7151990415CCFEF000566BCC /* My books button #2 noteworthy bold copy.png */,
+				7151990515CCFEF000566BCC /* Recent button #1 noteworthy bold.png */,
+				7151990615CCFEF000566BCC /* Upload button #4 noteworthy bold.png */,
+				7151990B15CCFF0500566BCC /* individual login button.png */,
+				7151991015CE6B0F00566BCC /* All done reedit.png */,
+				7151990D15CCFF0F00566BCC /* All done reedit.psd */,
+				7151990E15CCFF2000566BCC /* Serach for books.png */,
 				71FBA3F715B231F3005F932D /* book with plus sign.png */,
 				71FBA3F815B231F3005F932D /* book without plus sign.png */,
 				71C4FA2F15AF650F0037B0DB /* default pic.png */,
 				71C4FA2B15AF5F480037B0DB /* book search button 1.png */,
 				71C4FA2815AF5B8E0037B0DB /* login button 2.png */,
-				7167E58515C5CB14008A68C7 /* Top banner.png */,
+				715198FD15CCFEBB00566BCC /* Blank Banner.png */,
+				715198FE15CCFEBB00566BCC /* Top banner.png */,
 				71009BF515ACAE0E00A961C3 /* banner.png */,
 				71009BF715ACAE0E00A961C3 /* buddy icon.png */,
-				7100E5BA15C610A4005E2EB9 /* Blank Banner.png */,
 				71009BF815ACAE0E00A961C3 /* connectwithfacebook.png */,
 				71009BF915ACAE0E00A961C3 /* Home button.png */,
 				71009BFB15ACAE0E00A961C3 /* Loading screen background.png */,
-				7158B32C15C081100002B912 /* Sign me up reedit copy.png */,
+				7151990115CCFECF00566BCC /* Sign me up reedit copy.png */,
 				71009C0415ACAE0E00A961C3 /* want to tradelogoedit.png */,
 				71009C0515ACAE0E00A961C3 /* wantotradeloadscreenlogo.png */,
 				71009C0615ACAE0E00A961C3 /* wanttotrade banner.png */,
@@ -627,18 +626,17 @@
 				71C4FA3015AF65100037B0DB /* default pic.png in Resources */,
 				71FBA3F915B231F3005F932D /* book with plus sign.png in Resources */,
 				71FBA3FA15B231F3005F932D /* book without plus sign.png in Resources */,
-				71BFCF6915B87F4D007D584A /* wanttotrade2.png in Resources */,
-				7158B32B15C07D960002B912 /* Serach for books.png in Resources */,
-				7158B32D15C081100002B912 /* Sign me up reedit copy.png in Resources */,
-				7158B33015C081FE0002B912 /* All done reedit.png in Resources */,
-				7167E58615C5CB14008A68C7 /* Top banner.png in Resources */,
-				7100E5BB15C610A4005E2EB9 /* Blank Banner.png in Resources */,
-				7100E5BE15C61F15005E2EB9 /* individual login button.png in Resources */,
-				713E5DF515C67C3600FCE910 /* Major button #3 noteworthy bold.png in Resources */,
-				713E5DF615C67C3600FCE910 /* My books button #2 noteworthy bold.png in Resources */,
-				713E5DF715C67C3600FCE910 /* Recent button #1 noteworthy bold.png in Resources */,
-				713E5DF815C67C3600FCE910 /* Upload button #4 noteworthy bold.png in Resources */,
 				711F0C4715C8D222005EEEF4 /* FBDialog.bundle in Resources */,
+				715198FF15CCFEBB00566BCC /* Blank Banner.png in Resources */,
+				7151990015CCFEBB00566BCC /* Top banner.png in Resources */,
+				7151990215CCFECF00566BCC /* Sign me up reedit copy.png in Resources */,
+				7151990715CCFEF000566BCC /* Major button #3 noteworthy bold.png in Resources */,
+				7151990815CCFEF000566BCC /* My books button #2 noteworthy bold copy.png in Resources */,
+				7151990915CCFEF000566BCC /* Recent button #1 noteworthy bold.png in Resources */,
+				7151990A15CCFEF000566BCC /* Upload button #4 noteworthy bold.png in Resources */,
+				7151990C15CCFF0500566BCC /* individual login button.png in Resources */,
+				7151990F15CCFF2000566BCC /* Serach for books.png in Resources */,
+				7151991115CE6B0F00566BCC /* All done reedit.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,6 +761,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Want To Trade/Want To Trade-Prefix.pch";
 				INFOPLIST_FILE = "Want To Trade/Want To Trade-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../facebook-client/facebook-ios-sdk/lib/facebook-ios-sdk\"",
@@ -781,6 +780,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Want To Trade/Want To Trade-Prefix.pch";
 				INFOPLIST_FILE = "Want To Trade/Want To Trade-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../facebook-client/facebook-ios-sdk/lib/facebook-ios-sdk\"",

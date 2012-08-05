@@ -20,8 +20,8 @@
 
 @implementation ProfileEditViewController
 
-@synthesize userPhoto = _userPhoto;
 @synthesize delegate = _delegate;
+@synthesize userPhoto = _userPhoto;
 @synthesize mainDelegate = _mainDelegate;
 @synthesize settingsList = _settingsList;
 @synthesize selectedIndex = _selectedIndex;

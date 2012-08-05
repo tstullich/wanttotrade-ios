@@ -86,6 +86,8 @@
     _allFieldsFilled = NO;
     
     _appDel = [[UIApplication sharedApplication] delegate];
+    
+    cameraButton.enabled = NO;
 }
 
 //If an account hasn't been created, a small error message will pop up
