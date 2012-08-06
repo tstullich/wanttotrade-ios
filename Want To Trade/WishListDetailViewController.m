@@ -41,10 +41,10 @@
     self.bookIndex = bookIndex;
     AppDelegate *appDel = [[UIApplication sharedApplication] delegate];
     Book *aBook = [[appDel wishList]objectAtIndex:*(bookIndex)];
-    bookTitleLabel.text = [aBook bookTitle];
-    authorLabel.text = [aBook author];
-    priceLabel.text = [aBook price];
-    ownerLabel.text = [aBook owner];
+    bookTitleLabel.text = [aBook valueForKey:@"Title"];
+    authorLabel.text = [aBook valueForKey:@"Author"];
+    priceLabel.text = [aBook valueForKey:@"Price"];
+    ownerLabel.text = [aBook valueForKey:@"ID"];
 }
 
 - (void)viewDidUnload

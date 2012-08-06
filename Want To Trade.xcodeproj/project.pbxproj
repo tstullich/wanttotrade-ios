@@ -68,6 +68,7 @@
 		7151991815CEFC5D00566BCC /* MyBooksDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151991715CEFC5D00566BCC /* MyBooksDetailViewController.m */; };
 		7151991C15CF3C0400566BCC /* WishListSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151991B15CF3C0400566BCC /* WishListSearchViewController.m */; };
 		7151991F15CF483F00566BCC /* WishListSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151991E15CF483F00566BCC /* WishListSearchCell.m */; };
+		7151992215CF4EF200566BCC /* SearchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151992115CF4EF200566BCC /* SearchDetailViewController.m */; };
 		7185B0B115B0AC180021D074 /* RecentAddsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185B0B015B0AC180021D074 /* RecentAddsCell.m */; };
 		71889CF315B0C44C00E423BF /* RecentAddsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71889CF215B0C44C00E423BF /* RecentAddsViewController.m */; };
 		71889CF615B0C49A00E423BF /* WishlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71889CF515B0C49A00E423BF /* WishlistViewController.m */; };
@@ -204,6 +205,8 @@
 		7151991B15CF3C0400566BCC /* WishListSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishListSearchViewController.m; sourceTree = "<group>"; };
 		7151991D15CF483F00566BCC /* WishListSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishListSearchCell.h; sourceTree = "<group>"; };
 		7151991E15CF483F00566BCC /* WishListSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishListSearchCell.m; sourceTree = "<group>"; };
+		7151992015CF4EF200566BCC /* SearchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDetailViewController.h; sourceTree = "<group>"; };
+		7151992115CF4EF200566BCC /* SearchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDetailViewController.m; sourceTree = "<group>"; };
 		7185B0AF15B0AC180021D074 /* RecentAddsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentAddsCell.h; sourceTree = "<group>"; };
 		7185B0B015B0AC180021D074 /* RecentAddsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentAddsCell.m; sourceTree = "<group>"; };
 		71889CF115B0C44C00E423BF /* RecentAddsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentAddsViewController.h; sourceTree = "<group>"; };
@@ -565,6 +568,8 @@
 				710712A215B286FB00530C30 /* WishListDetailViewController.m */,
 				7151991A15CF3C0400566BCC /* WishListSearchViewController.h */,
 				7151991B15CF3C0400566BCC /* WishListSearchViewController.m */,
+				7151992015CF4EF200566BCC /* SearchDetailViewController.h */,
+				7151992115CF4EF200566BCC /* SearchDetailViewController.m */,
 			);
 			name = "Wish List Classes/Controllers";
 			sourceTree = "<group>";
@@ -705,6 +710,7 @@
 				7151991815CEFC5D00566BCC /* MyBooksDetailViewController.m in Sources */,
 				7151991C15CF3C0400566BCC /* WishListSearchViewController.m in Sources */,
 				7151991F15CF483F00566BCC /* WishListSearchCell.m in Sources */,
+				7151992215CF4EF200566BCC /* SearchDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

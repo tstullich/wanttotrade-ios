@@ -66,7 +66,6 @@
     AppDelegate *appDel = [[UIApplication sharedApplication] delegate];
     
     // Return the number of rows in the section.
-    NSLog(@"%i", [appDel.wishList count]);
     return [appDel.wishList count];
 }
 
@@ -80,9 +79,9 @@
         cell = [[WishListCell alloc] init];
     }
     
-    cell.bookTitleLabel.text = [[appDel.wishList objectAtIndex:indexPath.row] bookTitle];
-    cell.majorLabel.text = [[appDel.wishList objectAtIndex:indexPath.row] major];
-    cell.priceLabel.text = [[appDel.wishList objectAtIndex:indexPath.row] price];
+    cell.bookTitleLabel.text = [[appDel.wishList objectAtIndex:indexPath.row] valueForKey:@"Title"];
+    cell.majorLabel.text = [[appDel.wishList objectAtIndex:indexPath.row] valueForKey:@"Major"];
+    cell.priceLabel.text = [[appDel.wishList objectAtIndex:indexPath.row] valueForKey:@"Price"];
     
     return cell;
 }

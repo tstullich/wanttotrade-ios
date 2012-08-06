@@ -9,6 +9,7 @@
 #import "WishListSearchViewController.h"
 #import "WishlistViewController.h"
 #import "WishListSearchCell.h"
+#import "SearchDetailViewController.h"
 #import "MBProgressHUD.h"
 #import "Book.h"
 #import "JSON.h"
@@ -133,23 +134,22 @@
 }
 */
 
-#pragma mark - Table view delegate
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    selectedIndex = indexPath.row;
+    [self performSegueWithIdentifier:@"SearchDetailSegue" sender:self];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([[segue identifier] isEqualToString:@"CancelSearchSegue"]){
         WishlistViewController *wvc = [segue destinationViewController];
         wvc.navigationItem.hidesBackButton = YES;
+    }
+    else if ([[segue identifier] isEqualToString:@"SearchDetailSegue"]) {
+        SearchDetailViewController *svc = [segue destinationViewController];
+        svc.receivedBook = [searchList objectAtIndex:selectedIndex];
+        
     }
 }
 
@@ -165,6 +165,8 @@
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     NSLog(@"Search Began");
     [searchBar resignFirstResponder];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Searching...";
     
     NSString *url = [[NSString alloc] initWithFormat:@"https://cloud.skypaz.com/soa/pipes/http?bsuser=wtt.com-skypaz-FindBooks&bspass=wtt2012&Keyword=%@", searchBar.text]; 
     
