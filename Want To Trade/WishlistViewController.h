@@ -10,6 +10,6 @@
 
 @interface WishlistViewController : UITableViewController
 
-@property (nonatomic, readwrite) NSUInteger selectedIndex;
+@property (nonatomic, readwrite) NSInteger selectedIndex;
 
 @end

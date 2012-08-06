@@ -15,6 +15,6 @@
 @property (nonatomic, retain) IBOutlet UILabel *authorLabel;
 @property (nonatomic, retain) IBOutlet UILabel *priceLabel;
 @property (nonatomic, retain) IBOutlet UILabel *ownerLabel;
-@property (nonatomic, readwrite) NSUInteger *bookIndex;
+@property (nonatomic, readwrite) NSInteger bookIndex;
 
 @end

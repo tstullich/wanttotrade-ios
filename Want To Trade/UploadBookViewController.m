@@ -146,38 +146,30 @@
 //Need to implement a check for an empty field.
 -(NSMutableDictionary *)getFields{
     NSMutableDictionary *fieldCollection = [[NSMutableDictionary alloc] init];
-    if ([self.titleField.text isEqualToString:@""]) {
-        [fieldCollection setValue:@"N/A" forKey:@"bookTitle"];
-    }
-    else {
-        [fieldCollection setValue:self.titleField.text forKey:@"bookTitle"];
-    }
-    if ([self.authorField.text isEqualToString:@""]) {
-        [fieldCollection setValue:@"N/A" forKey:@"bookAuthor"];
-    }
-    else {
-        [fieldCollection setValue:self.authorField.text forKey:@"bookAuthor"];
-    }
-    if ([self.priceField.text isEqualToString:@""]) {
-        [fieldCollection setValue:@"0" forKey:@"bookPrice"];
-    }
-    else {
-        [fieldCollection setValue:self.priceField.text forKey:@"bookPrice"];
-    }
-    if ([self.editionField.text isEqualToString:@""]) {
-        [fieldCollection setValue:@"N/A" forKey:@"bookEdition"];
-    }
-    else {
-        [fieldCollection setValue:self.editionField.text forKey:@"bookEdition"];
-    }
-    if ([self.conditionField.text isEqualToString:@""]) {
-        [fieldCollection setValue:@"N/A" forKey:@"bookCondition"];
-    }
-    else {
-        [fieldCollection setValue:self.conditionField.text forKey:@"bookCondition"];
-    }
-        [fieldCollection setValue:_appDel.userID forKey:@"bookOwner"];
-        [fieldCollection setValue:@"0" forKey:@"bookOffers"];
+    
+    NSString *bookTitleField = [[NSString alloc] initWithString:self.titleField.text];
+    bookTitleField = [bookTitleField stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+    [fieldCollection setValue:bookTitleField forKey:@"bookTitle"];
+    
+    NSString *authorString = [[NSString alloc] initWithString:self.authorField.text];
+    authorString = [authorString stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+    [fieldCollection setValue:authorString forKey:@"bookAuthor"];
+    
+    NSString *priceString = [[NSString alloc] initWithString:self.priceField.text];
+    priceString = [priceString stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+    [fieldCollection setValue:priceString forKey:@"bookPrice"];
+    
+    NSString *editionString = [[NSString alloc] initWithString:self.editionField.text];
+    editionString = [editionString stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+    [fieldCollection setValue:editionString forKey:@"bookEdition"];
+    
+    NSString *conditionString = [[NSString alloc] initWithString:self.conditionField.text];
+    conditionString = [conditionString stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+    [fieldCollection setValue:conditionString forKey:@"bookCondition"];
+
+    [fieldCollection setValue:_appDel.userID forKey:@"bookOwner"];
+    [fieldCollection setValue:@"0" forKey:@"bookOffers"];
+    
     return fieldCollection;
 }
 
@@ -203,9 +195,6 @@
         }
         else {
             _options = [self getFields];
-            
-            //Add the Book Here
-            
             
             [self performSelectorInBackground:@selector(upLoadBook:) withObject:_options];
         }

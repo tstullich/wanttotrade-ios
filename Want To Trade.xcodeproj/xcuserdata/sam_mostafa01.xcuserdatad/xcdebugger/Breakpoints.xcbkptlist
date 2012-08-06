@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Want To Trade/WishlistViewController.m"
-         timestampString = "365048835.059129"
+         timestampString = "365910355.531055"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "64"
-         endingLineNumber = "64"
+         startingLineNumber = "68"
+         endingLineNumber = "68"
          landmarkName = "-tableView:numberOfRowsInSection:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -203,11 +203,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Want To Trade/UploadBookViewController.m"
-         timestampString = "365849192.966877"
+         timestampString = "365922942.874717"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "308"
-         endingLineNumber = "308"
+         startingLineNumber = "297"
+         endingLineNumber = "297"
          landmarkName = "-keyboardWillHide:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -235,6 +235,19 @@
          startingLineNumber = "56"
          endingLineNumber = "56"
          landmarkName = "-prepareForSegue:sender:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Want To Trade/UploadBookViewController.m"
+         timestampString = "365922942.874717"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "151"
+         endingLineNumber = "151"
+         landmarkName = "-getFields"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

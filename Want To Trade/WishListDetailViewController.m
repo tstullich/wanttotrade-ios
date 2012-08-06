@@ -40,7 +40,7 @@
 	// Do any additional setup after loading the view.
     self.bookIndex = bookIndex;
     AppDelegate *appDel = [[UIApplication sharedApplication] delegate];
-    Book *aBook = [[appDel wishList]objectAtIndex:*(bookIndex)];
+    Book *aBook = [[appDel wishList]objectAtIndex:bookIndex];
     bookTitleLabel.text = [aBook valueForKey:@"Title"];
     authorLabel.text = [aBook valueForKey:@"Author"];
     priceLabel.text = [aBook valueForKey:@"Price"];

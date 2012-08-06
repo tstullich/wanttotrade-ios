@@ -53,7 +53,6 @@
 		711F0C2D15C8BCE5005EEEF4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F0C1E15C8BC1B005EEEF4 /* SBJsonWriter.m */; };
 		711F0C4715C8D222005EEEF4 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 711F0C3A15C8D222005EEEF4 /* FBDialog.bundle */; };
 		711F0C4815C8D222005EEEF4 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 711F0C4015C8D222005EEEF4 /* libfacebook_ios_sdk.a */; };
-		71369A2415C11D72001D225C /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71369A2315C11D72001D225C /* SearchViewController.m */; };
 		7149ADD615C888E600323B27 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149ADD515C888BB00323B27 /* MBProgressHUD.m */; };
 		715198FF15CCFEBB00566BCC /* Blank Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 715198FD15CCFEBB00566BCC /* Blank Banner.png */; };
 		7151990015CCFEBB00566BCC /* Top banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 715198FE15CCFEBB00566BCC /* Top banner.png */; };
@@ -69,6 +68,9 @@
 		7151991C15CF3C0400566BCC /* WishListSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151991B15CF3C0400566BCC /* WishListSearchViewController.m */; };
 		7151991F15CF483F00566BCC /* WishListSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151991E15CF483F00566BCC /* WishListSearchCell.m */; };
 		7151992215CF4EF200566BCC /* SearchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151992115CF4EF200566BCC /* SearchDetailViewController.m */; };
+		7151992515CF728C00566BCC /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151992415CF728C00566BCC /* SearchViewController.m */; };
+		7151992815CF74E500566BCC /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151992715CF74E500566BCC /* SearchCell.m */; };
+		7151992B15CF7B6600566BCC /* BookSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151992A15CF7B6600566BCC /* BookSearchViewController.m */; };
 		7185B0B115B0AC180021D074 /* RecentAddsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185B0B015B0AC180021D074 /* RecentAddsCell.m */; };
 		71889CF315B0C44C00E423BF /* RecentAddsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71889CF215B0C44C00E423BF /* RecentAddsViewController.m */; };
 		71889CF615B0C49A00E423BF /* WishlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71889CF515B0C49A00E423BF /* WishlistViewController.m */; };
@@ -184,8 +186,6 @@
 		711F0C4415C8D222005EEEF4 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
 		711F0C4515C8D222005EEEF4 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
 		711F0C4615C8D222005EEEF4 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
-		71369A2215C11D72001D225C /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
-		71369A2315C11D72001D225C /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		7149ADD415C888BB00323B27 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		7149ADD515C888BB00323B27 /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		715198FD15CCFEBB00566BCC /* Blank Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blank Banner.png"; sourceTree = "<group>"; };
@@ -207,6 +207,12 @@
 		7151991E15CF483F00566BCC /* WishListSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishListSearchCell.m; sourceTree = "<group>"; };
 		7151992015CF4EF200566BCC /* SearchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDetailViewController.h; sourceTree = "<group>"; };
 		7151992115CF4EF200566BCC /* SearchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDetailViewController.m; sourceTree = "<group>"; };
+		7151992315CF728C00566BCC /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		7151992415CF728C00566BCC /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		7151992615CF74E500566BCC /* SearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCell.h; sourceTree = "<group>"; };
+		7151992715CF74E500566BCC /* SearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
+		7151992915CF7B6600566BCC /* BookSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookSearchViewController.h; sourceTree = "<group>"; };
+		7151992A15CF7B6600566BCC /* BookSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookSearchViewController.m; sourceTree = "<group>"; };
 		7185B0AF15B0AC180021D074 /* RecentAddsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentAddsCell.h; sourceTree = "<group>"; };
 		7185B0B015B0AC180021D074 /* RecentAddsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentAddsCell.m; sourceTree = "<group>"; };
 		71889CF115B0C44C00E423BF /* RecentAddsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentAddsViewController.h; sourceTree = "<group>"; };
@@ -447,6 +453,8 @@
 				71FA55F215B34EAD001B0120 /* SettingsCell.m */,
 				7151991D15CF483F00566BCC /* WishListSearchCell.h */,
 				7151991E15CF483F00566BCC /* WishListSearchCell.m */,
+				7151992615CF74E500566BCC /* SearchCell.h */,
+				7151992715CF74E500566BCC /* SearchCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -508,8 +516,10 @@
 		71369A1D15C11B88001D225C /* Search VCs */ = {
 			isa = PBXGroup;
 			children = (
-				71369A2215C11D72001D225C /* SearchViewController.h */,
-				71369A2315C11D72001D225C /* SearchViewController.m */,
+				7151992315CF728C00566BCC /* SearchViewController.h */,
+				7151992415CF728C00566BCC /* SearchViewController.m */,
+				7151992915CF7B6600566BCC /* BookSearchViewController.h */,
+				7151992A15CF7B6600566BCC /* BookSearchViewController.m */,
 			);
 			name = "Search VCs";
 			sourceTree = "<group>";
@@ -706,11 +716,13 @@
 				71E92B8515BF5AEE00E1FB5B /* PendingTradeDetailViewController.m in Sources */,
 				71E92B8915BF5B8B00E1FB5B /* CompletedTradeViewController.m in Sources */,
 				71E92B8C15BF5D0600E1FB5B /* EditDetailViewController.m in Sources */,
-				71369A2415C11D72001D225C /* SearchViewController.m in Sources */,
 				7151991815CEFC5D00566BCC /* MyBooksDetailViewController.m in Sources */,
 				7151991C15CF3C0400566BCC /* WishListSearchViewController.m in Sources */,
 				7151991F15CF483F00566BCC /* WishListSearchCell.m in Sources */,
 				7151992215CF4EF200566BCC /* SearchDetailViewController.m in Sources */,
+				7151992515CF728C00566BCC /* SearchViewController.m in Sources */,
+				7151992815CF74E500566BCC /* SearchCell.m in Sources */,
+				7151992B15CF7B6600566BCC /* BookSearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

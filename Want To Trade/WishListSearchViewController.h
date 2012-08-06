@@ -12,8 +12,6 @@
     IBOutlet UISearchBar *seachBar;
     NSMutableArray *searchList;
     NSInteger selectedIndex;
-    BOOL searching;
-    BOOL letUserSelectRow;
     NSString *responseString;
     NSMutableData *receivedData;
 }

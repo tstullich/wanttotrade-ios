@@ -43,6 +43,10 @@
     
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [self.tableView reloadData];
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -146,7 +150,7 @@
     }
     else if ([[segue identifier] isEqualToString:@"WishListDetailSegue"]) {
         WishListDetailViewController *wvc = [segue destinationViewController];
-        wvc.bookIndex = &(_selectedIndex);
+        wvc.bookIndex = _selectedIndex;
     }
 }
 

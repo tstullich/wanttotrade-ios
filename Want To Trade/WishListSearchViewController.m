@@ -44,9 +44,6 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.searchList = [[NSMutableArray alloc] init];
-    
-    searching = NO;
-    letUserSelectRow = YES;
 }
 
 - (void)viewDidUnload
@@ -158,8 +155,6 @@
                                                initWithBarButtonSystemItem:UIBarButtonItemStylePlain target:self 
                                               action:@selector(doneSearch_Clicked:)];
     rightButton.title = @"Search";*/
-    searching = YES;
-    letUserSelectRow = NO;
 }
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
