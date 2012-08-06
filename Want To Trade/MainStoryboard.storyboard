@@ -2046,47 +2046,84 @@
             <point key="canvasLocation" x="3601" y="-153"/>
         </scene>
         <!--Wish List Search View Controller - Search For A Book-->
-        <scene sceneID="8bK-Lb-BEx">
+        <scene sceneID="T7V-RX-5t7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6QC-JE-8PO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="tSR-wB-iYy" customClass="WishListSearchViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SRf-KW-Are">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NkN-uN-O0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="API-og-jxj" customClass="WishListSearchViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="0gX-sr-xXT">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" id="DF0-Du-MZr">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="tSR-wB-iYy" id="CEX-tP-ZVw"/>
-                                </connections>
-                            </searchBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Search For A Book" id="J3P-1h-OaQ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="YfA-Yk-cxX">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="6hu-Ka-Mi4">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
                             <connections>
-                                <segue destination="r73-cM-vGT" kind="push" identifier="CancelSearchSegue" id="KtL-Fc-0oJ"/>
+                                <outlet property="delegate" destination="API-og-jxj" id="hvd-hV-R93"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WishListSearchCell" rowHeight="60" id="RKx-9f-562" customClass="WishListSearchCell">
+                                <rect key="frame" x="0.0" y="66" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="book without plus sign.png" id="JY8-R6-sAw">
+                                            <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="HFn-1g-SA7">
+                                            <rect key="frame" x="67" y="5" width="227" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7Pq-cN-wF4">
+                                            <rect key="frame" x="67" y="34" width="184" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="8ZX-yM-e8h">
+                                            <rect key="frame" x="252" y="19" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="bookImage" destination="JY8-R6-sAw" id="kq1-wW-uuR"/>
+                                    <outlet property="majorLabel" destination="7Pq-cN-wF4" id="JYe-Ft-Dsl"/>
+                                    <outlet property="priceLabel" destination="8ZX-yM-e8h" id="J0E-Wn-sc0"/>
+                                    <outlet property="titleLabel" destination="HFn-1g-SA7" id="keM-DM-ZeS"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="API-og-jxj" id="tUM-JL-juM"/>
+                            <outlet property="delegate" destination="API-og-jxj" id="md3-YQ-ba5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Search For A Book" id="sXz-OK-aZh">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="evy-BH-cDX">
+                            <connections>
+                                <segue destination="r73-cM-vGT" kind="push" identifier="CancelSearchSegue" id="2w6-wM-yFg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="searchDisplayController" destination="lU2-58-n4F" id="uXW-Ev-9kP"/>
+                        <outlet property="seachBar" destination="6hu-Ka-Mi4" id="R3i-vy-Jfc"/>
                     </connections>
-                </viewController>
-                <searchDisplayController id="lU2-58-n4F">
-                    <connections>
-                        <outlet property="delegate" destination="tSR-wB-iYy" id="kys-RA-fdf"/>
-                        <outlet property="searchBar" destination="DF0-Du-MZr" id="Jz6-wf-8G1"/>
-                        <outlet property="searchContentsController" destination="tSR-wB-iYy" id="eAG-6q-dKw"/>
-                        <outlet property="searchResultsDataSource" destination="tSR-wB-iYy" id="bKG-TP-xVB"/>
-                        <outlet property="searchResultsDelegate" destination="tSR-wB-iYy" id="47T-yL-KRY"/>
-                    </connections>
-                </searchDisplayController>
+                </tableViewController>
             </objects>
-            <point key="canvasLocation" x="2087" y="-1990"/>
+            <point key="canvasLocation" x="2087" y="-1954"/>
         </scene>
         <!--Book Info View Controller - Info About Book-->
         <scene sceneID="vlp-Wr-Ca8">
@@ -2273,7 +2310,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="hKf-Dv-0VO"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bZz-oU-1rC">
                             <connections>
-                                <segue destination="tSR-wB-iYy" kind="push" identifier="SearchBooksSegue" id="FbY-WZ-fNl"/>
+                                <segue destination="API-og-jxj" kind="push" identifier="SearchBooksSegue" id="rAp-T6-2NJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2303,6 +2340,192 @@
         <image name="individual login button.png" width="49" height="39"/>
         <image name="wanttotradelogoedit2.png" width="161" height="165"/>
     </resources>
+    <classes>
+        <class className="ChooseMajorViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ChooseMajorViewController.h"/>
+        </class>
+        <class className="CompletedTradesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompletedTradesViewController.h"/>
+        </class>
+        <class className="EditDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="editField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="editItem" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+        </class>
+        <class className="LoadViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoadViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="status" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MyBooksCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyBooksCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="offersLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MyBooksDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyBooksDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookAuthorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookConditionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookEditionLablel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookPriceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookTitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MyBooksViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyBooksViewController.h"/>
+        </class>
+        <class className="PendingTradeDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PendingTradeDetailViewController.h"/>
+        </class>
+        <class className="PendingTradesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PendingTradesViewController.h"/>
+        </class>
+        <class className="ProfileEditViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileEditViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="getPhoto:"/>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="userPhoto" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ProfileViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="emailLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="majorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profilePhoto" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="schooLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="RecentAddsCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecentAddsCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="majorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="RecentAddsDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecentAddsDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookTitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="RecentAddsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecentAddsViewController.h"/>
+        </class>
+        <class className="SearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchViewController.h"/>
+        </class>
+        <class className="SettingsCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="settingTextLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="thisDetailTextLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SignUp2ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SignUp2ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonPressed:"/>
+                <relationship kind="outlet" name="allDoneButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="emailField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pwField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="SignUpSuccessViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SignUpSuccessViewController.h"/>
+        </class>
+        <class className="SignUpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SignUpViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="emailField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="fbLoginButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="pwField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="UploadBookViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UploadBookViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissKeyboard:"/>
+                <relationship kind="action" name="getPhoto:"/>
+                <relationship kind="action" name="submitData:"/>
+                <relationship kind="outlet" name="authorField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="authorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cameraButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="conditionField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="conditionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="editionField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="editionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="galleryButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="priceField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="titleField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="uploadedImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="UploadSuccessViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UploadSuccessViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="WishListCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WishListCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="majorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WishListDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WishListDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="authorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ownerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WishListSearchCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WishListSearchCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="majorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WishListSearchViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WishListSearchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="seachBar" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
+        <class className="WishlistViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WishlistViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
@@ -2314,6 +2537,5 @@
         <segue reference="DCA-Ov-jHa"/>
         <segue reference="RBJ-uS-gLl"/>
         <segue reference="hMr-zl-Fnb"/>
-        <segue reference="fW1-ku-KHw"/>
     </inferredMetricsTieBreakers>
 </document>
