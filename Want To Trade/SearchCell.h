@@ -11,13 +11,13 @@
 @interface SearchCell : UITableViewCell{
     UIImageView *bookImage;
     UILabel *titleLabel;
-    UILabel *majorLabel;
+    UILabel *authorLabel;
     UILabel *priceLabel;
 }
 
 @property (nonatomic, retain) IBOutlet UIImageView *bookImage;
 @property (nonatomic, retain) IBOutlet UILabel *titleLabel;
-@property (nonatomic, retain) IBOutlet UILabel *majorLabel;
+@property (nonatomic, retain) IBOutlet UILabel *authorLabel;
 @property (nonatomic, retain) IBOutlet UILabel *priceLabel;
 
 @end

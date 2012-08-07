@@ -97,9 +97,6 @@
     cell.bookTitleLabel.text = [aBook valueForKey:@"Title"];
     cell.majorLabel.text = [aBook valueForKey:@"Author"];
     cell.priceLabel.text = [aBook valueForKey:@"Price"];
-    cell.bookImage.image = [UIImage imageNamed:@"default pic.png"];
-    
-    NSLog(@"Cell Initialized\n");
     
     return cell;
 }

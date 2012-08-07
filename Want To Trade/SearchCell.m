@@ -12,7 +12,7 @@
 
 @synthesize bookImage;
 @synthesize titleLabel;
-@synthesize majorLabel;
+@synthesize authorLabel;
 @synthesize priceLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier

@@ -71,6 +71,7 @@
 		7151992515CF728C00566BCC /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151992415CF728C00566BCC /* SearchViewController.m */; };
 		7151992815CF74E500566BCC /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151992715CF74E500566BCC /* SearchCell.m */; };
 		7151992B15CF7B6600566BCC /* BookSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7151992A15CF7B6600566BCC /* BookSearchViewController.m */; };
+		715BD4E515D0CDE40030BB41 /* wanttotrade2.png in Resources */ = {isa = PBXBuildFile; fileRef = 715BD4E415D0CDE40030BB41 /* wanttotrade2.png */; };
 		7185B0B115B0AC180021D074 /* RecentAddsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185B0B015B0AC180021D074 /* RecentAddsCell.m */; };
 		71889CF315B0C44C00E423BF /* RecentAddsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71889CF215B0C44C00E423BF /* RecentAddsViewController.m */; };
 		71889CF615B0C49A00E423BF /* WishlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71889CF515B0C49A00E423BF /* WishlistViewController.m */; };
@@ -113,7 +114,7 @@
 		71009C0615ACAE0E00A961C3 /* wanttotrade banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanttotrade banner.png"; sourceTree = "<group>"; };
 		71009C0715ACAE0E00A961C3 /* wanttotradelogoedit2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wanttotradelogoedit2.png; sourceTree = "<group>"; };
 		71009C0815ACAE0E00A961C3 /* Wishlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wishlist.png; sourceTree = "<group>"; };
-		71009C3B15ACAE9900A961C3 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		71009C3B15ACAE9900A961C3 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		71009C3D15ACAFE800A961C3 /* ServerRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerRequest.h; sourceTree = "<group>"; };
 		71009C3E15ACAFE800A961C3 /* ServerRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerRequest.m; sourceTree = "<group>"; };
 		71009C4515ACB08A00A961C3 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -213,6 +214,7 @@
 		7151992715CF74E500566BCC /* SearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
 		7151992915CF7B6600566BCC /* BookSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookSearchViewController.h; sourceTree = "<group>"; };
 		7151992A15CF7B6600566BCC /* BookSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookSearchViewController.m; sourceTree = "<group>"; };
+		715BD4E415D0CDE40030BB41 /* wanttotrade2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wanttotrade2.png; sourceTree = "<group>"; };
 		7185B0AF15B0AC180021D074 /* RecentAddsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentAddsCell.h; sourceTree = "<group>"; };
 		7185B0B015B0AC180021D074 /* RecentAddsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentAddsCell.m; sourceTree = "<group>"; };
 		71889CF115B0C44C00E423BF /* RecentAddsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentAddsViewController.h; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 				71009BF915ACAE0E00A961C3 /* Home button.png */,
 				71009BFB15ACAE0E00A961C3 /* Loading screen background.png */,
 				7151990115CCFECF00566BCC /* Sign me up reedit copy.png */,
+				715BD4E415D0CDE40030BB41 /* wanttotrade2.png */,
 				71009C0415ACAE0E00A961C3 /* want to tradelogoedit.png */,
 				71009C0515ACAE0E00A961C3 /* wantotradeloadscreenlogo.png */,
 				71009C0615ACAE0E00A961C3 /* wanttotrade banner.png */,
@@ -662,6 +665,7 @@
 				7151990C15CCFF0500566BCC /* individual login button.png in Resources */,
 				7151990F15CCFF2000566BCC /* Serach for books.png in Resources */,
 				7151991115CE6B0F00566BCC /* All done reedit.png in Resources */,
+				715BD4E515D0CDE40030BB41 /* wanttotrade2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

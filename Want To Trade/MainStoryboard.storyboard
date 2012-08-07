@@ -866,7 +866,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTA-Jm-wOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="2WN-gt-3xy" userLabel="Sign Up View Controller - Sign Up" customClass="SignUpViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y0Q-eV-X3j">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="9Xz-hI-DOd">
@@ -975,7 +975,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z35-b0-GWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="O8C-Au-KaQ" customClass="SignUp2ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IhE-b8-BkC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Jfi-xj-sdp">
@@ -1058,11 +1058,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zDH-0H-hmQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="SignUpSuccess" id="cn3-Vs-Rw2" userLabel="Sign Up Success View Controller" customClass="SignUpSuccessViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QeG-ZJ-bEJ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="center" id="4h3-QL-SDh">
-                                <rect key="frame" x="0.0" y="31" width="320" height="153"/>
+                                <rect key="frame" x="0.0" y="31" width="320" height="197"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Thank you for signing up with Want To Trade.      We hope our application will be able to assist you in getting the best deal possible when trading your books through us. What can you do next???                                                        </string>
@@ -1203,7 +1203,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OsI-8z-yG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="MajorListView" id="7KX-ch-3ir" userLabel="Choose Major View Controller - Choose Your Major" customClass="ChooseMajorViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rCS-EV-FiD">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -1252,7 +1252,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3F1-Op-MOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="1jb-fj-dCT" userLabel="Book Info View Controller - Book Info" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n35-FQ-hMl">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="book without plus sign.png" id="c1l-RB-rEJ">
@@ -1322,7 +1322,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KmE-Ut-8Mh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="JFY-it-X7N" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="022-HF-pps">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1337,7 +1337,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="la5-FL-5Ts" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Owner Info" id="yXO-Ef-6zW" userLabel="Owner Info View Controller - Owner Info" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="63n-Fc-wSj">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This will be the Profile of the Owner." id="VOv-tt-121">
@@ -1361,7 +1361,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHV-W8-kCW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="MajorSearchView" id="fbr-jp-JPa" userLabel="Major Search Results Table View Controller" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="53" sectionHeaderHeight="22" sectionFooterHeight="22" id="xWH-u2-3lB">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -1652,7 +1652,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRe-4t-LAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="RecentView" id="9d7-eU-gGJ" userLabel="Recent Table View Controller" customClass="RecentAddsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="Vk0-Uq-1ZX">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -1723,7 +1723,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2p6-rn-kBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Cj4-R1-xyq" userLabel="Book Info View Controller - Book Info" customClass="RecentAddsDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="myy-Ry-Lts">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="book without plus sign.png" id="ad8-Ew-YLU">
@@ -1931,8 +1931,8 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
+                                    <outlet property="authorLabel" destination="vSg-FM-9mw" id="lpg-WM-91Q"/>
                                     <outlet property="bookImage" destination="fiJ-jm-67Z" id="fuN-HR-cdK"/>
-                                    <outlet property="majorLabel" destination="vSg-FM-9mw" id="Ln5-jj-No2"/>
                                     <outlet property="priceLabel" destination="zah-ze-y4o" id="7C4-36-Klj"/>
                                     <outlet property="titleLabel" destination="915-U8-1o2" id="if1-DE-kmZ"/>
                                 </connections>
@@ -2475,12 +2475,222 @@
         <image name="individual login button.png" width="49" height="39"/>
         <image name="wanttotradelogoedit2.png" width="161" height="165"/>
     </resources>
+    <classes>
+        <class className="ChooseMajorViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ChooseMajorViewController.h"/>
+        </class>
+        <class className="CompletedTradesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompletedTradesViewController.h"/>
+        </class>
+        <class className="EditDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="editField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="editItem" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+        </class>
+        <class className="LoadViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoadViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="status" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MyBooksCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyBooksCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="offersLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MyBooksDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyBooksDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookAuthorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookConditionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookEditionLablel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookPriceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookTitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MyBooksViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyBooksViewController.h"/>
+        </class>
+        <class className="PendingTradeDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PendingTradeDetailViewController.h"/>
+        </class>
+        <class className="PendingTradesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PendingTradesViewController.h"/>
+        </class>
+        <class className="ProfileEditViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileEditViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="getPhoto:"/>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="userPhoto" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ProfileViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="emailLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="majorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profilePhoto" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="schooLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="RecentAddsCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecentAddsCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="majorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="RecentAddsDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecentAddsDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookTitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="RecentAddsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecentAddsViewController.h"/>
+        </class>
+        <class className="SearchCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="authorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SearchDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookAuthorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookConditionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookEditionLablel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookPriceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookTitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SearchViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="seachBar" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
+        <class className="SettingsCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="settingTextLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="thisDetailTextLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SignUp2ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SignUp2ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonPressed:"/>
+                <relationship kind="outlet" name="allDoneButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="emailField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pwField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="SignUpSuccessViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SignUpSuccessViewController.h"/>
+        </class>
+        <class className="SignUpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SignUpViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="emailField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="fbLoginButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="pwField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="UploadBookViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UploadBookViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissKeyboard:"/>
+                <relationship kind="action" name="getPhoto:"/>
+                <relationship kind="action" name="submitData:"/>
+                <relationship kind="outlet" name="authorField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="authorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cameraButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="conditionField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="conditionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="editionField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="editionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="galleryButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="priceField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="titleField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="uploadedImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="UploadSuccessViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UploadSuccessViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="WishListCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WishListCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="majorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WishListDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WishListDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="authorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ownerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WishListSearchCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WishListSearchCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="majorLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WishListSearchViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WishListSearchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="seachBar" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
+        <class className="WishlistViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WishlistViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="9Iz-68-gKw"/>
         <segue reference="3Lu-8J-yiL"/>
         <segue reference="yHx-IU-sSR"/>
         <segue reference="DCA-Ov-jHa"/>

@@ -163,6 +163,8 @@
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.labelText = @"Searching...";
     
+    searchBar.text = [searchBar.text stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+    
     NSString *url = [[NSString alloc] initWithFormat:@"https://cloud.skypaz.com/soa/pipes/http?bsuser=wtt.com-skypaz-FindBooks&bspass=wtt2012&Keyword=%@", searchBar.text]; 
     
     NSURLRequest *theRequest = [[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:url]];
@@ -223,6 +225,11 @@
 //Uses the loaded json and adds the books to the view.
 //Also dismisses the progress view
 -(void)updateUI{
+    if (searchList.count == 0) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry" message:@"No Books Matching Books Were Found.\n Please Try Some Different Input." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alert show];
+        [searchList removeAllObjects]; 
+    }
     [self.tableView reloadData];
     [MBProgressHUD hideHUDForView:self.view animated:YES];
 }

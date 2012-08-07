@@ -82,7 +82,7 @@
     
     // Configure the cell...
     cell.titleLabel.text = [[searchList objectAtIndex:indexPath.row] valueForKey:@"Title"];
-    cell.majorLabel.text = [[searchList objectAtIndex:indexPath.row] valueForKey:@"Major"];
+    cell.authorLabel.text = [[searchList objectAtIndex:indexPath.row] valueForKey:@"Author"];
     cell.priceLabel.text = [[searchList objectAtIndex:indexPath.row] valueForKey:@"Price"];
     
     return cell;
@@ -146,10 +146,11 @@
 }
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-    NSLog(@"Search Began");
     [searchBar resignFirstResponder];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.labelText = @"Searching...";
+    
+    searchBar.text = [searchBar.text stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
     
     NSString *url = [[NSString alloc] initWithFormat:@"https://cloud.skypaz.com/soa/pipes/http?bsuser=wtt.com-skypaz-FindBooks&bspass=wtt2012&Keyword=%@", searchBar.text]; 
     
