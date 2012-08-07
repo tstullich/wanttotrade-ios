@@ -113,7 +113,7 @@
 		71009C0615ACAE0E00A961C3 /* wanttotrade banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanttotrade banner.png"; sourceTree = "<group>"; };
 		71009C0715ACAE0E00A961C3 /* wanttotradelogoedit2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wanttotradelogoedit2.png; sourceTree = "<group>"; };
 		71009C0815ACAE0E00A961C3 /* Wishlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wishlist.png; sourceTree = "<group>"; };
-		71009C3B15ACAE9900A961C3 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		71009C3B15ACAE9900A961C3 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		71009C3D15ACAFE800A961C3 /* ServerRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerRequest.h; sourceTree = "<group>"; };
 		71009C3E15ACAFE800A961C3 /* ServerRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerRequest.m; sourceTree = "<group>"; };
 		71009C4515ACB08A00A961C3 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };

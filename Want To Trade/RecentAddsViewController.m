@@ -12,12 +12,20 @@
 #import "RecentAddsDetailViewController.h"
 #import "HomeViewController.h"
 #import "AppDelegate.h"
+#import "MBProgressHUD.h"
+#import "JSON.h"
 
 @interface RecentAddsViewController ()
 
 @end
 
 @implementation RecentAddsViewController
+
+@synthesize receivedData;
+@synthesize responseString;
+@synthesize searchList;
+@synthesize selectedIndex;
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -37,8 +45,15 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Loading...";
     
+    NSURLRequest *theRequest = [[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:@"https://cloud.skypaz.com/soa/pipes/http?bsuser=wtt.com-skypaz-GetRecentAdditions&bspass=wtt2012"]];
+    NSURLConnection *theConnection = [[NSURLConnection alloc] initWithRequest:theRequest delegate:self];
     
+    if (theConnection) {
+        receivedData = [NSMutableData data];
+    }
     NSLog(@"Recent Adds Initialized\n");
 }
 
@@ -65,24 +80,23 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    AppDelegate *appDel = [[UIApplication sharedApplication] delegate];
     // Return the number of rows in the section.
-    return [appDel.recentAddsList count];
+    return [searchList count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    AppDelegate *appDel = [[UIApplication sharedApplication] delegate];
+    
     RecentAddsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecentAddsCell"];
     // Configure the cell...
     if (cell == nil) {
         cell = [[RecentAddsCell alloc] init];
         
     }
-    Book *aBook = [appDel.recentAddsList objectAtIndex:indexPath.row];
-    [cell setBookTitleLabel:(UILabel *)[aBook bookTitle]];
-    cell.majorLabel.text = [aBook major];
-    cell.priceLabel.text = [aBook price];
+    Book *aBook = [searchList objectAtIndex:indexPath.row];
+    cell.bookTitleLabel.text = [aBook valueForKey:@"Title"];
+    cell.majorLabel.text = [aBook valueForKey:@"Author"];
+    cell.priceLabel.text = [aBook valueForKey:@"Price"];
     cell.bookImage.image = [UIImage imageNamed:@"default pic.png"];
     
     NSLog(@"Cell Initialized\n");
@@ -149,6 +163,47 @@
         HomeViewController *hvc = [segue destinationViewController];
         hvc.navigationItem.hidesBackButton = YES;
     }
+}
+
+-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
+    [receivedData appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
+    // This method is called when the server has determined that it
+    // has enough information to create the NSURLResponse.
+    
+    // It can be called multiple times, for example in the case of a
+    // redirect, so each time we reset the data.
+    
+    // receivedData is an instance variable declared elsewhere.
+    [receivedData setLength:0];
+}
+
+- (void) connection:(NSURLConnection *) connection didFailWithError:(NSError *) error
+{
+    // release the connection, and the data object
+    // inform the user
+    UIAlertView* netAlert = [[UIAlertView alloc] initWithTitle:@"Whoops..." message:@"Connection Failed!\n Please make sure you have an internet connection." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [netAlert show];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection{
+    responseString = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+    
+    NSLog(@"Response: %@", responseString);
+    
+    NSDictionary *result = [responseString JSONValue];
+    
+    searchList = [result objectForKey:@"data"];
+    
+    [self performSelector:@selector(updateUI)];
+}
+
+-(void)updateUI{
+    [self.tableView reloadData];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
 
 @end
