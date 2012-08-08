@@ -9,6 +9,7 @@
 #import "ProfileViewController.h"
 #import "ProfileEditViewController.h"
 #import "AppDelegate.h"
+#import "NSDataAdditions.h"
 
 @interface ProfileViewController ()
 
@@ -53,8 +54,17 @@
         [_majorLabel setText:appDel.userMajor];
     }
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *encodedImg = [self readStringFromFile];
+    NSLog(@"Encoded Img: %@", encodedImg);
+    NSData *decodedImg = [NSData base64DataFromString:encodedImg];
+    NSLog(@"Decoded Img: %@", decodedImg);
+    UIImage *userImg = [[UIImage alloc] initWithData:decodedImg];
+    NSLog(@"User Img: %@", userImg);
     
+    _profilePhoto.image = userImg;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+     
     if ([defaults boolForKey:@"UsedFBLogin"]) {
         UIBarButtonItem *fbLogout =[[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStyleDone target:self action:@selector(someMethod)];
         [fbLogout setTintColor:[UIColor redColor]];
@@ -98,6 +108,17 @@
     NSLog(@"Logout Code To Come Here");
 #warning Tim, come back to this!!
     NSLog(@"This will test the changes made");
+}
+
+- (NSString*)readStringFromFile {
+    
+    // Build the path...
+    NSString* filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString* fileName = @"test.txt";
+    NSString* fileAtPath = [filePath stringByAppendingPathComponent:fileName];
+    
+    // The main act...
+    return [[NSString alloc] initWithData:[[NSData alloc] initWithContentsOfFile:fileAtPath] encoding:NSUTF8StringEncoding];
 }
 
 @end

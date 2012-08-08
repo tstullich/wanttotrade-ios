@@ -13,6 +13,7 @@
 #import "MyBooksViewController.h"
 #import "AppDelegate.h"
 #import "MBProgressHUD.h"
+#import "NSString.h"
 
 @interface UploadBookViewController ()
 
@@ -41,6 +42,7 @@
 @synthesize priceLabel;
 @synthesize editionLabel;
 @synthesize conditionLabel;
+@synthesize encodedImg;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -204,6 +206,13 @@
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.labelText = @"Uploading...";
     
+    NSData *pngImg = UIImagePNGRepresentation(uploadedImage.image);
+    encodedImg = [NSString base64StringFromData:pngImg length:pngImg.length];
+    
+    
+    [self writeStringToFile:encodedImg];
+    
+    
     NSMutableString *theURL = [[NSMutableString alloc] initWithString:@"https://cloud.skypaz.com/soa/pipes/http?bsuser=wtt.com-skypaz-UploadBook&bspass=wtt2012"];
     
     [theURL appendFormat:@"&Title=%@&Author=%@&Price=%@",  [theOptions objectForKey:@"bookTitle"], 
@@ -212,6 +221,7 @@
     [theURL appendFormat:@"&Edition=%@&Condition=%@&Owner=%@", [theOptions objectForKey:@"bookEdition"],
                                                             [theOptions objectForKey:@"bookCondition"],
                                                             _appDel.userID];
+    [theURL appendFormat:@"&Picture=%@", encodedImg];
     
     NSLog(@"%@\n", theURL);
     NSURLRequest *theRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:theURL]
@@ -223,7 +233,7 @@
     });
         // Create the NSMutableData to hold the received data.
         // receivedData is an instance variable declared elsewhere.
-        receivedData = [NSMutableData data];
+        receivedData = [NSMutableData data];    
 }
 
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
@@ -306,4 +316,18 @@
     self.activeField = nil;
 }
 
+-(void)writeStringToFile:(NSString*)aString {
+
+// Build the path, and create if needed.
+NSString* filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+NSString* fileName = @"test.txt";
+NSString* fileAtPath = [filePath stringByAppendingPathComponent:fileName];
+
+if (![[NSFileManager defaultManager] fileExistsAtPath:fileAtPath]) {
+    [[NSFileManager defaultManager] createFileAtPath:fileAtPath contents:nil attributes:nil];
+}
+
+// The main act.
+[[aString dataUsingEncoding:NSUTF8StringEncoding] writeToFile:fileAtPath atomically:NO];
+}
 @end

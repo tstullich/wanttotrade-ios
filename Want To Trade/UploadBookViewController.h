@@ -20,7 +20,7 @@
     UIScrollView *scrollView;
     UILabel *titleLabel, *authorLabel, *priceLabel, *editionLabel, *conditionLabel;
     NSMutableData *receivedData;
-    NSString *responseString;
+    NSString *responseString, *encodedImg;
     NSMutableDictionary *options;
     CGFloat yPositionStore;
     AppDelegate *appDel;
@@ -48,6 +48,7 @@
 @property (readwrite) CGFloat yPositionStore;
 @property (nonatomic, retain) AppDelegate *appDel;
 @property (assign) BOOL allFieldsFilled;
+@property (nonatomic, retain) NSString *encodedImg;
 
 -(IBAction)getPhoto:(id)sender;
 -(IBAction)dismissKeyboard:(id)sender;

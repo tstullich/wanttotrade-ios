@@ -53,6 +53,8 @@
 		711F0C2D15C8BCE5005EEEF4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 711F0C1E15C8BC1B005EEEF4 /* SBJsonWriter.m */; };
 		711F0C4715C8D222005EEEF4 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 711F0C3A15C8D222005EEEF4 /* FBDialog.bundle */; };
 		711F0C4815C8D222005EEEF4 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 711F0C4015C8D222005EEEF4 /* libfacebook_ios_sdk.a */; };
+		7128F4CD15D1B30500C497A6 /* NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7128F4CC15D1B30500C497A6 /* NSString.m */; };
+		7128F4D015D1B42C00C497A6 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7128F4CF15D1B42C00C497A6 /* NSDataAdditions.m */; };
 		7149ADD615C888E600323B27 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149ADD515C888BB00323B27 /* MBProgressHUD.m */; };
 		715198FF15CCFEBB00566BCC /* Blank Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 715198FD15CCFEBB00566BCC /* Blank Banner.png */; };
 		7151990015CCFEBB00566BCC /* Top banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 715198FE15CCFEBB00566BCC /* Top banner.png */; };
@@ -187,6 +189,10 @@
 		711F0C4415C8D222005EEEF4 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
 		711F0C4515C8D222005EEEF4 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
 		711F0C4615C8D222005EEEF4 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		7128F4CB15D1B30500C497A6 /* NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString.h; sourceTree = "<group>"; };
+		7128F4CC15D1B30500C497A6 /* NSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString.m; sourceTree = "<group>"; };
+		7128F4CE15D1B42C00C497A6 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		7128F4CF15D1B42C00C497A6 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
 		7149ADD415C888BB00323B27 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		7149ADD515C888BB00323B27 /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		715198FD15CCFEBB00566BCC /* Blank Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blank Banner.png"; sourceTree = "<group>"; };
@@ -382,6 +388,10 @@
 				7107129C15B2627E00530C30 /* Major.m */,
 				71FA55F515B35314001B0120 /* Setting.h */,
 				71FA55F615B35314001B0120 /* Setting.m */,
+				7128F4CB15D1B30500C497A6 /* NSString.h */,
+				7128F4CC15D1B30500C497A6 /* NSString.m */,
+				7128F4CE15D1B42C00C497A6 /* NSDataAdditions.h */,
+				7128F4CF15D1B42C00C497A6 /* NSDataAdditions.m */,
 			);
 			name = "Extra Classes";
 			sourceTree = "<group>";
@@ -727,6 +737,8 @@
 				7151992515CF728C00566BCC /* SearchViewController.m in Sources */,
 				7151992815CF74E500566BCC /* SearchCell.m in Sources */,
 				7151992B15CF7B6600566BCC /* BookSearchViewController.m in Sources */,
+				7128F4CD15D1B30500C497A6 /* NSString.m in Sources */,
+				7128F4D015D1B42C00C497A6 /* NSDataAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
